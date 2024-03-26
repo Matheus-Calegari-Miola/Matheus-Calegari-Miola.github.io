@@ -1,0 +1,508 @@
+/* Reset de estilos padrão para a página */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Definição de variáveis de cor */
+:root{
+    --maincolor: rgba(36, 65, 21, 0.786);
+}
+
+/* Estilos para a barra de navegação */
+.nav_ul_li_a{
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    font-weight: bold;
+}
+
+/* Estilos para o logotipo na barra de navegação */
+.logo_nav{
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 4px black;
+    animation: sombraAnimada 2s infinite alternate;
+}
+
+/* Estilos para barra de navegação principal */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui,Helvetica, Arial, sans-serif;
+    background-color: var(--maincolor);
+    height: 9vh;
+    width: 100vw;
+}
+.nav_ul{
+    list-style: none;
+    display: flex;
+}
+.nav_ul li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    padding: 6px;
+}
+.nav_menu_bars section{
+    width: 32px;
+    height: 2px;
+    background: white;
+    margin: 8px;
+    transition: 0.3s;
+}
+.nav_menu_bars{
+    display: none;
+    cursor: pointer;
+}
+/*----------------------MAIN-------------------------------------------------------------------------------------------*/
+
+/* Estilos para o corpo da página */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ddd;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Estilos para a seção principal (main) */
+.description{
+    height: 91vh;
+    display: flex;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12vw;
+}
+.main_photo{
+    display: flex;
+    flex-basis: 50%;
+    border-radius: 50%;
+    justify-content: center;
+    padding: 15px;
+}
+.main_photo img{
+    width: 350px;
+    height: 350px;
+    margin: 100px 0;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: -1;
+    box-shadow: 0px 3px 2px 2px black;
+}
+
+.description_text{
+    flex-basis: 50%;
+    padding: 15px 35px 0 20px;
+    width: 100%;
+}
+
+.greeting{
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: bold;
+}
+h1{
+    font-size: 2.5em;
+    letter-spacing: 2.5px;
+    margin: 24px 0;
+}
+h1 span{
+    color: var(--maincolor);
+}
+
+ /* Estilos para a animação da descrição */
+.small-description span{
+    letter-spacing: 1px;
+    color: black;
+    font-size: 2.3rem;
+    min-width: 250px;
+    line-height: 1.5;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px black;
+    animation: small-description 5s ease-in-out;
+}
+.small-description span:nth-of-type(2) {
+    animation-delay: 0.25s;
+}
+.small-description span:nth-of-type(3) {
+    animation-delay: 0.50s;
+}
+.small-description span:nth-of-type(4) {
+    animation-delay: 0.75s;
+}
+.small-description span:nth-of-type(5) {
+    animation-delay: 1s;
+}
+.small-description span:nth-of-type(6) {
+    animation-delay: 1.25s;
+}
+.small-description span:nth-of-type(7) {
+    animation-delay:1.50s;
+}
+.small-description span:nth-of-type(8){
+    animation-delay:1.75s;
+}
+.small-description span:nth-of-type(9){
+    animation-delay:2s;
+}
+.small-description span:nth-of-type(10){
+    animation-delay:2.25s
+}
+.small-description span:nth-of-type(11){
+    animation-delay:2.50s;
+}
+.small-description span:nth-of-type(12){
+    animation-delay:2.75s;
+}
+.small-description span:nth-of-type(13){
+    animation-delay:3s;
+}
+.small-description span:nth-of-type(14){
+    animation-delay:3.25s;
+}
+.small-description span:nth-of-type(15){
+    animation-delay:3.50s;
+}
+.small-description span:nth-of-type(16){
+    animation-delay:3.75s;
+}
+.small-description span:nth-of-type(17){
+    animation-delay:4s;
+}
+.small-description span:nth-of-type(18){
+    animation-delay:4.25s;
+}
+.small-description span:nth-of-type(19){
+    animation-delay:4.50s;
+}
+.small-description span:nth-of-type(20){
+    animation-delay:4.75s;
+}
+.small-description span:nth-of-type(21){
+    animation-delay:5s;
+}
+.small-description span:nth-of-type(22){
+    animation-delay:5.25s;
+}
+/*---------------------LINKS GITHUB /LINKEDIN---------------------------------------------------------------------------*/
+
+/* Estilos para links de redes  sociais e currículo */
+.socialmedia{
+    display: flex;
+    margin-top: 30px;
+}
+
+.resumelink{
+    background: var(--maincolor);
+    margin: -13px 0;
+    padding: 20px 35px 20px 35px;
+    border-radius: 40px;
+    letter-spacing: 2.5px;
+    font-size: 1rem;
+    font-weight: 300;
+    display: box-shadow 0.2s;
+    color: white;
+    text-decoration: none;
+}
+
+.resumelink:hover{
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 255, 0.37)
+}
+.sociallist{
+    margin: 40px 0;
+    list-style: none;
+    display: flex;
+
+}
+.sociallist li a{
+    margin: 0 14px;
+    padding: 9px 10px ;
+    padding-top: 25px;
+    background: #fff;
+    border-radius: 6px;
+    color: var(--maincolor);
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px 0 #777;
+}
+.sociallist li a:hover{
+box-shadow: 0 2px 15px 0 #000070;
+}
+.sociallist li a i{
+    color: var(--maincolor);
+}
+/*------------ABOUT-----------------------------------------------------------------------------------------------------*/
+
+/* Estilos para a seção "SOBRE" */
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40px;
+}
+
+.titulo-about{
+    margin: 50px 20px;
+    padding-top: 25px;
+    font-weight: bold 500;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+
+.information{
+    background-color: white;
+    padding: 30px 10vw;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    width: 75vw;
+    text-align: justify;
+    align-self: center;
+    box-shadow: 0 3px 3px;
+}
+#information-animation::after{
+    content: '|';
+    animation: cursor-blink 0.7s infinite;
+}
+/* ----------------------SKILLS-------------------------------------------------------------------------------------------*/
+
+/* Estilos para a seção "HABILIDADES" */
+.skills{
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-skills{
+    margin: 50px 20px;
+    padding-top: 25px;
+    font-weight: bold 500;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 50px;
+    list-style: none;
+    grid-column-gap: 45px;
+    grid-row-gap: 50px;
+    width: 75vw;
+    align-self: center;
+    box-shadow: 0 3px 3px;
+}
+
+.grid_items{
+    justify-self: center;
+    padding: 10px 4px 5px 4px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    transition-duration: 0.2s;
+}
+
+.grid_items:hover{
+    box-shadow: 0 2px 15px 0 #aaa;
+}
+.grid_items p{
+    padding: 1px;
+    font-size: 14px;
+    text-align: center;
+}
+.grid_items img{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px
+}
+
+.sketchup{
+    transform: scaleY(2.5);
+    margin-bottom: 10px;
+}
+/*----------------------------------------------PROJECTS-----------------------------------------------------------------------*/
+
+/* Estilos para a seção "PROJETOS" */
+.works{
+    margin: 0 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-works{
+    margin: 50px 20px;
+    padding-top: 25px;
+    font-weight: bold 500;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    display: block;
+}
+
+.grid_container_works{
+    display: grid;
+    grid-template-columns: repeat(1, 30vw);
+    grid-template-rows: repeat(1, 18vw);
+    justify-content: center;
+    align-self: center;
+    background: white;
+    padding: 30px;
+    border-radius: 50px;
+    width:75vw;
+    box-shadow: 0 3px 3px;
+}
+
+.grid_items_section{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.grid_items_works{
+    width: 20vw;
+    height: 12vw;
+    border-radius: 20px;
+}
+
+.grid_items_works:hover{
+    box-shadow: 0 3px 15px 0 #555;
+}
+
+.title_project {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.project-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+
+}
+
+/*------------------------------CONTACT-------------------------------------------------------------------------------------------------------------------------*/
+
+/* Estilos para a seção "CONTATO" */
+.contact{
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+}
+.titulo-contact{
+    margin: 30px 20px;
+    padding-top: 25px;
+    font-weight: bold 500;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    margin: 50px 35px;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    box-shadow: 0 3px 3px;
+}
+
+.contact-details-email{
+    margin: 30px;
+    margin-top: 30px;
+    transition-duration: 0.7s;
+    border-radius: 10px;
+    border: 0.5 solid gray;
+}
+.contact-details-email img{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+.contact-details-email a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: var(--maincolor);
+    font-size: 18px;
+}
+.contact-details-email p{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    color:#555;
+    font-size: 15px;
+}
+.contact-details-email:hover{
+    box-shadow: 0 2px 15px #aaa;
+}
+
+/*--------------------------------------------------------------------------------FOOTER----------------------------------------------------------------*/
+
+/* Estilos para o rodapé */
+.footer{
+    margin-top: 15px;
+    width: 100vw;
+    height: 8vh;
+    bottom: 0;
+    display: inline-block;
+    background-color: var(--maincolor);
+}
+.copyright{
+    text-align: center;
+    padding: 2vh 0;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+}
+
+/*------------------------------------------------KEYFRAMES---------------------------------*/
+
+/* Definição de animações usando keyframes */
+@keyframes sombraAnimada {
+    0%{
+        text-shadow: 0 0 10px white;
+    }
+    100%{
+        text-shadow: 0 0 10px black;
+    }
+}
+@keyframes small-description {
+    0%{
+        color:#ddd;
+        text-shadow:0 0 12px #ddd 0 0 50px #ddd
+        0 0 100px #ddd;
+    }
+    10%, 90%{
+        color: #ddd;
+        text-shadow:none
+    }
+    100% {
+        color: black;
+        text-shadow: none;
+    }
+}
+@keyframes cursor-blink {
+    0%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

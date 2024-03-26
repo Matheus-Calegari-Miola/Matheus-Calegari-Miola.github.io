@@ -1,0 +1,148 @@
+/* Define as regras para telas com largura entre 300px e 750px */
+@media screen and (min-width: 300px) and (max-width: 750px){
+    
+    /* Impede a rolagem horizontal */
+    body{
+        overflow-x: hidden;
+    }
+
+/* Define o estilo da barra de navegação quando ativa */
+    .nav_ul{
+        flex-direction: column;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 36vw;
+        height: 91vh;
+        background: white;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(110%);
+        transition: transform 0.3s ease forwards;
+        opacity: 0.9;
+        display: none; /* Inicialmente oculta */
+    }
+
+/* Estilo dos itens da barra de navegação */
+.nav_ul li{
+    margin-left: 0;
+    opacity: 1;
+}
+
+/* Estilo dos links na barra de navegação */
+.nav_ul_li_a{
+   color: black;
+}
+
+/* Define o estilo do ícone de menu da barra de navegação quando em hover */
+.nav_ul_li_a:hover{
+    color: rgba(36, 65, 21, 0.786);
+}
+
+/* Define o estilo do ícone de menu da barra de navegação */
+.nav_menu_bars{
+    display: block;
+}
+
+/* Define o estilo da barra de navegação quando ativa */
+.nav_ul_active{
+    transform: translateX(0);
+    display: flex;
+}
+
+/* Define o estilo da informação */
+.information {
+    text-align: left;
+    margin: 0 10px;
+    word-wrap: break-word;
+}
+
+/* Define a animação de entrada dos links da barra de navegação */
+@keyframes navLinksEntrance{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Define o estilo da descrição */
+.description{
+    display: block;
+    margin-bottom: 250px;
+}
+
+/* Define o estilo do texo da descrição */
+.description_text{
+    text-align: center;
+}
+
+/* Define o estilo das redes sociais */
+.socialmedia{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+/* Define o estilo da imagem principal */
+.main_photo img{
+    width: 250px;
+    height: 250px;
+}
+
+/* Define o estilo dos links das redes sociais quando em hover */
+.sociallist li a:hover{
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 255, 0.192);
+}
+
+/* Define a cor dos itens de lista nas redes sociais */
+.sociallist li a li{
+    color: var(--maincolor);
+}
+
+/* Define o estilo do título "Sobre" */
+.titulo-about{
+    margin-top: 10vh;
+    margin-bottom: 40px;
+}
+
+/* Define a estrutura da grade de trabalhos */
+.grid_container_works{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, auto);
+}
+
+/* Define o estilo dos itens da grade de trabalhos */
+.grid_items_works{
+    width: 90%;
+    height: 90%;
+    margin-top:10px;
+}
+
+/*Define o estilo dos vídeos na grade de trabalhos */
+.grid_items_works video {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 20px;
+}
+
+/* Define o estilo dos links para projetos */
+.project-link{
+    display: block;
+    margin-top: 10px;
+}
+
+/* Define o estilo do título do projeto */
+.title_project{
+    margin-left: 10px;
+}
+
+/* Define o estilo do título das seções da grade */
+.grid_items_section h3{
+    text-align: center;
+    font-size: 2.5vw;
+}
+}
